@@ -13,6 +13,6 @@ The dataset used was generated through GC-HRMS-based suspect and non-target scre
 and optimized to produce a more objective and reliable ranking of high-priority contaminants.
 
 # Repository Contents
-- Sample data: This folder Contains sample input data used for training and testing the machine learning models.
-- Codes: Includes R scripts for data preprocessing, model training, and hyperparameter tuning.
-- Figures: Output files and ToxPi scores used for ranking the compounds.
+- Sample data: This folder contains sample input data used for training and testing the machine learning models.
+- Codes: This folder includes R scripts for data preprocessing, model training, and hyperparameter tuning.
+- Figures: This folder contains output files (from data analysis) and ToxPi scores used for ranking the compounds.
