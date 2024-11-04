@@ -1,0 +1,21 @@
+Groups,Alkyl_PAHs,BUVs,Diamondoids,Hetero_PAHs,Hopanes,TPs,n_Alkanes,OPFRs,Parent_PAHs,PCPs,Pesticides,Pharms,Phenols,Plasticizers,Sesquiterpenes,Synthetic_musks,VMSs,Others,Region
+I_IND,2,0,0,0,0,0,0,2,1,5,0,1,2,3,0,0,0,2,Industrial (IND) region
+II_IND,0,0,0,0,0,0,5,4,1,1,1,0,0,1,0,2,6,6,Industrial (IND) region
+III_IND,0,0,0,0,0,0,4,3,3,1,1,1,6,5,0,0,4,2,Industrial (IND) region
+IV_IND,2,0,0,0,0,0,9,0,0,0,2,0,0,2,0,0,0,0,Industrial (IND) region
+I_OC2,2,0,0,0,0,2,0,4,0,5,0,0,1,4,0,0,0,1,Oil-contaminated 2 (OC2) region
+II_OC2,3,0,1,1,0,3,4,2,1,2,0,0,1,3,1,0,1,1,Oil-contaminated 2 (OC2) region
+III_OC2,10,0,0,5,0,3,6,2,2,1,0,2,2,7,3,2,0,7,Oil-contaminated 2 (OC2) region
+IV_OC2,6,0,0,3,0,0,5,2,2,0,0,1,0,0,0,0,1,0,Oil-contaminated 2 (OC2) region
+I_AGR,1,0,0,0,0,1,0,2,1,3,2,1,1,4,0,0,1,1,Agricultural (AGR) region
+II_AGR,1,0,0,0,0,2,6,5,2,3,0,2,0,5,0,2,10,2,Agricultural (AGR) region
+III_AGR,2,0,0,0,0,0,6,0,1,1,1,0,1,6,0,0,3,1,Agricultural (AGR) region
+IV_AGR,0,2,0,0,0,0,3,1,0,0,1,1,1,1,0,0,1,0,Agricultural (AGR) region
+I_OC1,2,0,0,0,0,2,0,4,1,3,0,0,4,5,0,0,0,3,Oil-contaminated 1 (OC1) region
+II_OC1,5,0,0,1,0,3,12,2,4,1,1,1,5,4,0,1,2,5,Oil-contaminated 1 (OC1) region
+III_OC1,5,1,0,1,0,1,11,3,1,1,2,1,3,8,0,0,1,6,Oil-contaminated 1 (OC1) region
+IV_OC1,5,2,0,0,0,0,2,2,5,0,1,1,0,1,0,0,4,0,Oil-contaminated 1 (OC1) region
+I_LF,1,0,0,0,0,0,0,5,2,4,0,1,1,5,1,0,1,3,Landfill (LF) region
+II_LF,1,0,0,0,0,0,6,3,8,4,1,2,4,4,0,1,3,1,Landfill (LF) region
+III_LF,4,4,1,0,2,0,16,3,9,2,0,4,2,13,0,0,5,0,Landfill (LF) region
+IV_LF,4,0,0,0,0,1,6,1,1,0,4,1,0,4,0,1,3,1,Landfill (LF) region

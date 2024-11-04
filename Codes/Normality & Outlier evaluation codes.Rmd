@@ -1,0 +1,84 @@
+---
+title: "Normality & Outlier evaluation codes"
+author: "Okon D. Ekpe"
+date: "2024-10-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+#Load the data files
+ML_ToxPi <- read.csv(file.choose(), header = T)
+
+```
+
+
+```{r}
+#Assess the normality of the data by Shapiro-Wilk test
+shapiro.test(ML_ToxPi$ToxPi_scores)
+
+#Assess the normality of the data by Q-Q plot
+ggqqplot(ML_ToxPi$ToxPi_scores, title = "ToxPi scores")
+
+#Assess the normality of the data by Density plot
+ggdensity(ML_ToxPi$ToxPi_scores, main = "Density plot of ToxPi scores",
+          xlab = "ToxPi scores")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+
+```{r}
+#####################
+##Outliers detection
+#####################
+
+
+# Load necessary libraries
+library(ggplot2)   # For visualization
+library(dplyr)     # For data manipulation
+library(stats)     # For statistical functions like IQR
+
+
+# Univariate Outlier Detection
+# Method 1: Using boxplot statistics
+boxplot_outliers <- function(x) {
+  Q1 <- quantile(x, 0.25)
+  Q3 <- quantile(x, 0.75)
+  IQR <- Q3 - Q1
+  lower_bound <- Q1 - 1.5 * IQR
+  upper_bound <- Q3 + 1.5 * IQR
+  return(which(x < lower_bound | x > upper_bound))
+}
+
+# Checking for outliers in a specific column
+outliers_ToxPi_scores <- boxplot_outliers(ML_ToxPi$ToxPi_scores)
+cat("Outliers in 'ToxPi_scores':", outliers_ToxPi_scores, "\n")
+
+# Method 2: Using z-scores (standard deviation-based)
+z_score_outliers <- function(x) {
+  z_scores <- scale(x) # Standardize the values
+  return(which(abs(z_scores) > 3)) # Threshold is usually 3
+}
+
+outliers_z_ToxPi_scores <- z_score_outliers(ML_ToxPi$ToxPi_scores)
+cat("Z-score based outliers in 'ToxPi_scores':", outliers_z_ToxPi_scores, "\n")
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
