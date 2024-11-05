@@ -1,7 +1,7 @@
 # ml_ToxPi: Prioritization of Organic Micropollutants in Groundwater Using Machine Learning optimized ToxPi Models
 This repository contains the code and scripts used for the manuscript entitled:
-"Prioritization of monitoring compounds from SNTS identified organic micropollutants in contaminated groundwater using a machine learning optimized ToxPi model"
-The study aims to provide a robust prioritization framework by combining ToxPi and machine learning models,
+"Prioritization of monitoring compounds from SNTS identified organic micropollutants in contaminated groundwater using a machine learning optimized ToxPi model".
+The study aims to provide a robust prioritization framework by combining ToxPi and machine learning models (herein called "ml_ToxPi"),
 optimizing the weighting factors to reliably rank contaminants according to their environmental significance and health risk potential.
 
 
